@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Запись на занятие</title>
+</head>
+<body>
+    <h1 id="top">Ваш личный фитнес гид!</h1>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fonts/anahit/anahit.css">
+    <link rel="stylesheet" href="fonts/notoserif/notoserif.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    
+   <div class="menu">
+   
+   <ul class="navigation">
+       <li><a href="index.html">Главная страница</a></li>
+       <li><a href="photo.html">Фотогалерея↓</a>
+            <ul class="sub_menu">
+                      <li><a href="href"#"">Фотографии</a></li>
+                      <li><a href="href"#"">Видеоролики</a></li>
+                      <li><a href="href"#"">Обучающие материалы</a></li>    
+            </ul>
+       </li>
+       <li><a href="contacts.html">Контакты</a></li>
+       <li><a href="booking.html">Запись на занятие</a></li>
+   </ul>
+    </div>
+   
+    <h2>Запись на занятие!</h2>
+    <img src="images/unnamed.jpg" alt="про фитнес" width="500">
+    
+    <form>
+        
+        <h3>Основные данные</h3>
+        
+        <label for="name">Введите ваше Ф.И.О.</label>
+        <input type="text" name="fio" id="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        
+        <label for="phone">Телефон:</label>
+        <input type="text" name="phone" id="phone" required>
+        <br><br>
+        <label for="date_from">Предпочтительная дата начала занятий:</label>
+        <input type="date" name="date_from" id="date_from" required>
+        
+        <label for="date_till">Предпочтительная дата окончания занятий:</label>
+        <input type="date" name="date_till" id="date_till" required>
+        <br><br>
+        
+        <label for="type_room">Тип занятия:</label>
+        <select name="type_room" id="type_room">
+            <option value="1">Фитнес для взрослых</option>
+            <option value="2">Фитнес для детей</option>
+            <option value="3">Оздоровительные процедуры</option>
+            <option value="4">Массажные процедуры</option>
+        </select>
+        
+        <label for="adults">Количетсво абонементов:</label>
+        <select name="adults" id="adults">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>      
+        </select>
+        
+        <h2>Вид тарифа:</h2>
+        
+        <input type="radio" id="type_business" name="type_trip" value="type_business">
+        <label for="type_business">VIP</label><br>
+        
+        
+        <input type="radio" id="type_resort" name="type_trip" value="type_resort">
+        <label for="type_resort">Стандарт</label><br><br>
+        
+        <h3>Дополнительные опции</h3>
+        
+        <input type="checkbox" id="option_1" name="option_1">
+        <label for="option_1">Консультации по питанию</label><br>
+        
+        <input type="checkbox" id="option_2" name="option_2">
+        <label for="option_2">Личный Тренер</label><br>
+        
+        <input type="checkbox" id="option_3" name="option_3">
+        <label for="option_3">Консультация Спортивного питания</label><br><br>
+        
+        <label for="comment">Комментарии по занятиям</label><br>
+        <textarea name="name" id="comment" cols="60" rows="4"></textarea>
+        <br><br>
+        
+        <input type="submit" value="Записаться на занятие">
+    </form>
+    
+    <p><a href="#top">Наверх</a></p>
+</body>
+</html>
